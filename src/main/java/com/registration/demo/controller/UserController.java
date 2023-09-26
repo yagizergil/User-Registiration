@@ -41,4 +41,9 @@ public class UserController {
         return userService.deleteUser(id);
     }
 
+    @GetMapping("/all")
+    public ResponseEntity<Object> getAllUsers() {
+        return userService.getAllUsers();
+    }
+
 }
